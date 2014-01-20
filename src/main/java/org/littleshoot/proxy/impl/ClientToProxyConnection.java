@@ -36,13 +36,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.net.ssl.SSLSession;
 
-import org.apache.commons.lang3.StringUtils;
 import org.littleshoot.proxy.ActivityTracker;
 import org.littleshoot.proxy.FlowContext;
 import org.littleshoot.proxy.FullFlowContext;
 import org.littleshoot.proxy.HttpFilters;
 import org.littleshoot.proxy.SslEngineSource;
 import org.littleshoot.proxy.extras.Base64;
+import org.littleshoot.proxy.extras.StringUtils;
 
 /**
  * <p>

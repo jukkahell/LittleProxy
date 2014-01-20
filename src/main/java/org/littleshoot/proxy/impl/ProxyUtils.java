@@ -23,8 +23,8 @@ import java.util.Properties;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.math.NumberUtils;
+import org.littleshoot.proxy.extras.NumberUtils;
+import org.littleshoot.proxy.extras.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

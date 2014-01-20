@@ -34,7 +34,6 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 import javax.net.ssl.SSLSession;
 
-import org.apache.commons.lang3.StringUtils;
 import org.littleshoot.dnssec4j.VerifiedAddressFactory;
 import org.littleshoot.proxy.ActivityTracker;
 import org.littleshoot.proxy.ChainedProxy;
@@ -45,6 +44,7 @@ import org.littleshoot.proxy.HttpFilters;
 import org.littleshoot.proxy.MitmManager;
 import org.littleshoot.proxy.TransportProtocol;
 import org.littleshoot.proxy.UnknownTransportProtocolError;
+import org.littleshoot.proxy.extras.StringUtils;
 import org.slf4j.spi.LocationAwareLogger;
 
 /**
@@ -122,7 +122,6 @@ public class ProxyToServerConnection extends ProxyConnection<HttpResponse> {
      * @param proxyServer
      * @param clientConnection
      * @param serverHostAndPort
-     * @param currentFilters
      * @param initialHttpRequest
      * @return
      * @throws UnknownHostException
@@ -743,8 +742,6 @@ public class ProxyToServerConnection extends ProxyConnection<HttpResponse> {
      * Build an {@link InetSocketAddress} for the given hostAndPort.
      * 
      * @param hostAndPort
-     * @param proxyServer
-     *            the current {@link ProxyServer}
      * @return
      * @throws UnknownHostException
      *             if hostAndPort could not be resolved
